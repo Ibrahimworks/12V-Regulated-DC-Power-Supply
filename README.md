@@ -1,22 +1,22 @@
 <div align="center">
-
+ 
 # 🔌 12V Regulated DC Power Supply / مزود طاقة تيار مستمر 12 فولت
-
+ 
 </div>
-
+ 
 ---
-
+ 
 <details>
 <summary>🇬🇧 English</summary>
-
+ 
 A classic linear regulated power supply designed in **NI Multisim 13**, converting **230Vrms / 50Hz** mains AC down to a stable **+12V DC** output using the LM7812CT voltage regulator.
-
+ 
 ### Schematic
-
-![Schematic](schematic.png)
-
+ 
+![Schematic](assets/schematic.png)
+ 
 ### How It Works
-
+ 
 | Stage | Components | Function |
 |---|---|---|
 | Transformer | 5H_SP (10:1) | Steps 230Vrms down to ~23Vrms |
@@ -25,9 +25,9 @@ A classic linear regulated power supply designed in **NI Multisim 13**, converti
 | Regulator | U1 (LM7812CT) | Regulates to +12V DC |
 | Output filter | C3 (100nF), C4 (10µF) | Stabilises regulator output |
 | Protection | D5 (1N4007) | Reverse-polarity output protection |
-
+ 
 ### Step-by-step signal flow
-
+ 
 1. **V1** provides 230Vrms / 50Hz AC — same as a standard wall outlet.
 2. The **10:1 transformer (5H_SP)** reduces this to ~23Vrms (~32.5V peak).
 3. The **bridge rectifier** (D1–D4) converts AC to pulsating DC (~31V after diode drops).
@@ -35,9 +35,9 @@ A classic linear regulated power supply designed in **NI Multisim 13**, converti
 5. The **LM7812CT** clamps the output to a steady **+12V**.
 6. **C3 (100nF)** and **C4 (10µF)** filter the regulated output for stability.
 7. **D5** blocks reverse current from flowing back into the system.
-
+ 
 ### Components
-
+ 
 | Reference | Part | Value / Notes |
 |---|---|---|
 | V1 | AC Source | 230Vrms, 50Hz |
@@ -49,9 +49,9 @@ A classic linear regulated power supply designed in **NI Multisim 13**, converti
 | C3 | Output bypass | 100nF ceramic |
 | C4 | Output filter | 10µF electrolytic |
 | D5 | Protection diode | 1N4007 |
-
+ 
 ### Electrical Specifications
-
+ 
 | Parameter | Value |
 |---|---|
 | Input voltage | 230Vrms / 50Hz |
@@ -59,33 +59,33 @@ A classic linear regulated power supply designed in **NI Multisim 13**, converti
 | Max output current | 1.5A (LM7812CT limit) |
 | Max output power | ~18W |
 | Dropout voltage | ~2V (LM7812CT) |
-
+ 
 ### Simulation
-
+ 
 This circuit was designed in **NI Multisim 13**.
-
-<a href="powersupply.ms13" download>
+ 
+<a href="assets/powersupply.ms13" download>
   <img src="https://img.shields.io/badge/⬇️%20Download-powersupply.ms13-blue?style=for-the-badge" alt="Download Multisim Project"/>
 </a>
-
+ 
 ### Video Walkthrough
-
-[![Watch the video](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/schematic.png)](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/assets/demo_gb.mp4)
-
+ 
+[![Watch the video](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/assets/schematic.png)](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/assets/demo_gb.mp4)
+ 
 #### Screenshots
-
+ 
 | Interactive Simulation Settings | Analysis Options | Custom SPICE Options |
 |---|---|---|
-| ![](sim-settings-1.png) | ![](sim-settings-2.png) | ![](sim-settings-3.png) |
-
+| ![](assets/sim-settings-1.png) | ![](assets/sim-settings-2.png) | ![](assets/sim-settings-3.png) |
+ 
 #### Running the simulation
-
+ 
 1. Open `powersupply.ms13` in Multisim 13 or later.
 2. Press **F5** (or go to **Simulate → Run**) to start interactive simulation.
 3. Place a **Multimeter** or **Oscilloscope** (from Instruments menu) between `out+` and `out−` to measure the output voltage.
-
+ 
 #### Simulation settings (already configured in the file)
-
+ 
 | Setting | Value |
 |---|---|
 | SPICE options | Use custom settings |
@@ -97,24 +97,24 @@ This circuit was designed in **NI Multisim 13**.
 | RELTOL | 0.01 |
 | RSHUNT | 1e+12 Ω |
 | Convergence assistance (CONVLIMIT) | Enabled |
-
+ 
 </details>
-
+ 
 ---
-
+ 
 <details>
 <summary>🇩🇿 العربية</summary>
-
+ 
 <div dir="rtl">
-
+ 
 مزود طاقة خطي منظّم مصمَّم ببرنامج **NI Multisim 13**، يحوّل تيار متردد بجهد **230 فولت جذر متوسط مربع / 50 هرتز** إلى تيار مستمر مستقر بجهد **12 فولت** باستخدام منظّم الجهد LM7812CT.
-
+ 
 ### المخطط الكهربائي
-
-![المخطط الكهربائي](schematic.png)
-
+ 
+![المخطط الكهربائي](assets/schematic.png)
+ 
 ### طريقة عمل الدائرة
-
+ 
 | المرحلة | المكوّنات | الوظيفة |
 |---|---|---|
 | المحوّل | 5H_SP (10:1) | يخفّض الجهد من 230 فولت إلى 23 فولت |
@@ -123,9 +123,9 @@ This circuit was designed in **NI Multisim 13**.
 | المنظّم | U1 (LM7812CT) | تثبيت الجهد عند 12 فولت |
 | مرشّح الخرج | C3 (100nF)، C4 (10µF) | تعزيز استقرار جهد الخرج |
 | الحماية | D5 (1N4007) | الحماية من عكس القطبية |
-
+ 
 ### شرح تدفق الإشارة خطوة بخطوة
-
+ 
 1. **المصدر V1** يوفّر تيارًا متردًا بجهد 230 فولت وتردد 50 هرتز — مماثل لمأخذ الكهرباء المنزلي.
 2. **المحوّل (5H_SP)** بنسبة 10:1 يخفّض الجهد إلى نحو 23 فولت جذر متوسط مربع (ذروة ~32.5 فولت).
 3. **الموجّه الجسري** (D1–D4) يحوّل التيار المتردد إلى تيار مستمر نابض (نحو 31 فولت بعد انخفاض الصمامات).
@@ -133,9 +133,9 @@ This circuit was designed in **NI Multisim 13**.
 5. **LM7812CT** يثبّت جهد الخرج عند **12 فولت** بصورة مستقرة.
 6. **C3 (100nF)** و**C4 (10µF)** يعزّزان استقرار الجهد بعد المنظّم.
 7. **D5** تمنع عودة التيار إلى الدائرة.
-
+ 
 ### قائمة المكوّنات
-
+ 
 | المرجع | القطعة | القيمة / ملاحظات |
 |---|---|---|
 | V1 | مصدر تيار متردد | 230 فولت جذر متوسط مربع، 50 هرتز |
@@ -147,9 +147,9 @@ This circuit was designed in **NI Multisim 13**.
 | C3 | مرشّح خرج | 100 نانوفاراد سيراميك |
 | C4 | مرشّح خرج | 10 ميكروفاراد كهروليتي |
 | D5 | صمام حماية | 1N4007 |
-
+ 
 ### المواصفات الكهربائية
-
+ 
 | المعامل | القيمة |
 |---|---|
 | جهد الدخل | 230 فولت جذر متوسط مربع / 50 هرتز |
@@ -157,33 +157,33 @@ This circuit was designed in **NI Multisim 13**.
 | أقصى تيار خرج | 1.5 أمبير |
 | أقصى قدرة خرج | ~18 واط |
 | جهد السقوط | ~2 فولت |
-
+ 
 ### المحاكاة
-
+ 
 صُمِّمت هذه الدائرة ببرنامج **NI Multisim 13**.
-
-<a href="powersupply.ms13" download>
+ 
+<a href="assets/powersupply.ms13" download>
   <img src="https://img.shields.io/badge/⬇️%20تحميل_ملف_المشروع-powersupply.ms13-green?style=for-the-badge" alt="تحميل"/>
 </a>
-
+ 
 ### شرح فيديو
-
-[![شاهد الفيديو](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/schematic.png)](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/assets/demo_ar.mp4)
-
+ 
+[![شاهد الفيديو](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/assets/schematic.png)](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/assets/demo_ar.mp4)
+ 
 #### لقطات الشاشة
-
+ 
 | إعدادات المحاكاة التفاعلية | خيارات التحليل | إعدادات SPICE المخصصة |
 |---|---|---|
-| ![](sim-settings-1.png) | ![](sim-settings-2.png) | ![](sim-settings-3.png) |
-
+| ![](assets/sim-settings-1.png) | ![](assets/sim-settings-2.png) | ![](assets/sim-settings-3.png) |
+ 
 #### كيفية تشغيل المحاكاة
-
+ 
 1. افتح `powersupply.ms13` في Multisim 13 أو إصدار أحدث.
 2. اضغط **F5** أو انتقل إلى **Simulate → Run**.
 3. ضع **مقياس الجهد** أو **الأوسيلوسكوب** بين `out+` و`out−` لقياس جهد الخرج.
-
+ 
 #### إعدادات المحاكاة (مضبوطة مسبقًا في الملف)
-
+ 
 | الإعداد | القيمة |
 |---|---|
 | خيارات SPICE | إعدادات مخصصة |
@@ -195,12 +195,12 @@ This circuit was designed in **NI Multisim 13**.
 | RELTOL | 0.01 |
 | RSHUNT | 1e+12 أوم |
 | مساعدة التقارب (CONVLIMIT) | مفعّلة |
-
+ 
 </div>
 </details>
-
+ 
 ---
-
+ 
 ## License
-
+ 
 This project is released under the [MIT License](LICENSE).
