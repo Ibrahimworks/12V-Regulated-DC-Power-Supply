@@ -118,6 +118,15 @@ https://github.com/user-attachments/assets/fe318b0b-636f-46ce-af26-970246c491c9
 
 ---
 
+## ⚠️ Safety Notice
+
+This project involves **230V mains electricity**.  
+Improper handling can cause **serious injury or death**.
+
+Only build this circuit if you are familiar with proper electrical safety practices.
+
+---
+
 # 🇩🇿 العربية
 
 <div dir="rtl">
@@ -207,12 +216,13 @@ https://github.com/user-attachments/assets/68a5b7d8-426b-4bd2-81d5-98c172c6e117
 
 ---
 
-## ⚠️ Safety Notice
+## ⚠️ تنبيه هام للسلامة
 
-This project involves **230V mains electricity**.  
-Improper handling can cause **serious injury or death**.
+يتضمن هذا المشروع استخدام كهرباء بجهد ٢٣٠ فولت.
 
-Only build this circuit if you are familiar with proper electrical safety practices.
+قد يؤدي سوء التعامل معه إلى إصابات خطيرة أو الوفاة.
+
+لا تقم ببناء هذه الدائرة إلا إذا كنت على دراية تامة بإجراءات السلامة الكهربائية السليمة.
 
 ---
 
