@@ -168,7 +168,10 @@ This circuit was designed in **NI Multisim 13**.
  
 ### شرح فيديو
 
- "will be a video here"
+
+https://github.com/user-attachments/assets/68a5b7d8-426b-4bd2-81d5-98c172c6e117
+
+
  
 #### لقطات الشاشة
  
