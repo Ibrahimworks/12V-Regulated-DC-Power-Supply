@@ -104,7 +104,7 @@ https://github.com/user-attachments/assets/fe318b0b-636f-46ce-af26-970246c491c9
 
 ---
 
-## Screenshots
+## Simulation Settings
 
 | Interactive Simulation | Analysis Options | SPICE Settings |
 |---|---|---|
@@ -216,6 +216,13 @@ https://github.com/user-attachments/assets/68a5b7d8-426b-4bd2-81d5-98c172c6e117
 
 </div>
 
+---
+
+## إعدادات المحاكاة
+
+| إعدادات المحاكاة التفاعلية | خيارات التحليل | إعدادات SPICE |
+|---|---|---|
+| ![](assets/sim-settings-1.png) | ![](assets/sim-settings-2.png) | ![](assets/sim-settings-3.png) |
 ---
 
 ## ⚠️ تنبيه هام للسلامة
