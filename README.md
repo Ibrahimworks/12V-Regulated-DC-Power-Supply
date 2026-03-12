@@ -6,7 +6,7 @@ A classic linear regulated power supply designed in LTspice, converting **230Vrm
 
 ## Schematic
 
-![Schematic](Schematic.png)
+![Schematic](schematic.png)
 
 ---
 
@@ -63,7 +63,11 @@ A classic linear regulated power supply designed in LTspice, converting **230Vrm
 
 ## Simulation
 
-This circuit was designed in **NI Multisim 13**. The project file `powersupply.ms13` is included.
+This circuit was designed in **NI Multisim 13**.
+
+<a href="powersupply.ms13" download>
+  <img src="https://img.shields.io/badge/⬇️%20Download-powersupply.ms13-blue?style=for-the-badge" alt="Download Multisim Project"/>
+</a>
 
 ### Screenshots
 
