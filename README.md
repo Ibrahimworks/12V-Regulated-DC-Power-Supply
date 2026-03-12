@@ -64,17 +64,15 @@ A classic linear regulated power supply designed in **NI Multisim 13**, converti
 
 This circuit was designed in **NI Multisim 13**.
 
-### Video Walkthrough
-
-<video src="https://github.com/user-attachments/assets/demo_en.mp4" controls width="100%">
-
-> 📅 Video will be uploaded soon.
-
-</video>
-
 <a href="powersupply.ms13" download>
   <img src="https://img.shields.io/badge/⬇️%20Download-powersupply.ms13-blue?style=for-the-badge" alt="Download Multisim Project"/>
 </a>
+
+### Video Walkthrough
+
+<!-- REPLACE THE LINE BELOW WITH YOUR GITHUB ASSET URL ONCE UPLOADED -->
+> 📅 **Video will be uploaded soon.**
+<!-- Example: https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -->
 
 #### Screenshots
 
@@ -106,7 +104,7 @@ This circuit was designed in **NI Multisim 13**.
 
 ---
 
-<details><details>
+<details>
 <summary>🇩🇿 العربية</summary>
 
 <div dir="rtl">
@@ -166,17 +164,15 @@ This circuit was designed in **NI Multisim 13**.
 
 صُمِّمت هذه الدائرة ببرنامج **NI Multisim 13**.
 
-### شرح فيديو
-
-<video src="https://github.com/user-attachments/assets/demo_ar.mp4" controls width="100%">
-
-> 📅 الفيديو سيتم رفعه قريبًا
-
-</video>
-
 <a href="powersupply.ms13" download>
   <img src="https://img.shields.io/badge/⬇️%20تحميل_ملف_المشروع-powersupply.ms13-green?style=for-the-badge" alt="تحميل"/>
 </a>
+
+### شرح فيديو
+
+<!-- استبدل السطر أدناه برابط GitHub Asset بعد الرفع -->
+> 📅 **الفيديو سيتم رفعه قريبًا**
+<!-- مثال: https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -->
 
 #### لقطات الشاشة
 
@@ -206,9 +202,6 @@ This circuit was designed in **NI Multisim 13**.
 
 </div>
 </details>
-
----
-
 
 ---
 
