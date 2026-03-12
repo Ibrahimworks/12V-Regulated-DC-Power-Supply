@@ -6,7 +6,7 @@ A classic linear regulated power supply designed in LTspice, converting **230Vrm
 
 ## Schematic
 
-![Schematic](Schematic.png)
+![Schematic](schematic.png)
 
 ---
 
@@ -24,7 +24,7 @@ A classic linear regulated power supply designed in LTspice, converting **230Vrm
 ### Step-by-step signal flow
 
 1. **V1** provides 230Vrms / 50Hz AC.
-2. The **10:1 transformer** reduces this to ~23Vrms (~32.5V peak).
+2. The **10:1 transformer (5H_SP)** reduces this to ~23Vrms (~32.5V peak).
 3. The **bridge rectifier** (D1–D4) converts AC to pulsating DC (~31V after diode drops).
 4. **C2 (4700µF)** smooths the bulk ripple; **C1 (100nF)** bypasses high-frequency noise.
 5. The **LM7812CT** clamps the output to a steady **+12V**.
@@ -38,7 +38,7 @@ A classic linear regulated power supply designed in LTspice, converting **230Vrm
 | Reference | Part | Value / Notes |
 |---|---|---|
 | V1 | AC Source | 230Vrms, 50Hz |
-| 5H_SP | Transformer | 5Henry, 10:1 ratio |
+| 5H_SP | Transformer | 5H primary, 10:1 ratio |
 | D1–D4 | Rectifier diodes | 1N4007 (1A, 1000V) |
 | C2 | Bulk capacitor | 4700µF electrolytic |
 | C1 | Bypass capacitor | 100nF ceramic |
@@ -63,11 +63,35 @@ A classic linear regulated power supply designed in LTspice, converting **230Vrm
 
 ## Simulation
 
-This circuit was designed for **LTspice**. To simulate:
+This circuit was designed in **NI Multisim 13**. The project file `powersupply.ms13` is included.
 
-1. Open `schematic.asc` in LTspice (XVII or later).
-2. Run a **transient analysis** (`.tran 200ms`) to observe start-up and ripple.
-3. Probe `out+` vs `out−` for the regulated output voltage.
+### Screenshots
+
+| Interactive Simulation Settings | Analysis Options | Custom SPICE Options |
+|---|---|---|
+| ![](sim-settings-1.png) | ![](sim-settings-2.png) | ![](sim-settings-3.png) |
+
+### Running the simulation
+
+1. Open `powersupply.ms13` in Multisim 13 or later.
+2. Press **F5** (or go to **Simulate → Run**) to start interactive simulation.
+3. Place a **Multimeter** or **Oscilloscope** (from Instruments menu) between `out+` and `out−` to measure the output voltage.
+
+### Simulation settings (already configured in the file)
+
+If you need to adjust settings, go to **Simulate → Interactive Simulation Settings**:
+
+| Setting | Value |
+|---|---|
+| SPICE options | Use custom settings |
+| Max simulation speed | Limited to real time |
+| Grapher data | Discard data to save memory |
+| Max number of points | 128,000 |
+| ABSTOL | 1e-9 A |
+| VNTOL | 0.0001 V |
+| RELTOL | 0.01 |
+| RSHUNT | 1e+12 Ω |
+| Convergence assistance (CONVLIMIT) | Enabled |
 
 ---
 
