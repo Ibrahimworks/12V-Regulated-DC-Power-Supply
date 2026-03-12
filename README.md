@@ -1,209 +1,222 @@
 <div align="center">
- 
-# 🔌 12V Regulated DC Power Supply / مزود طاقة تيار مستمر 12 فولت
- 
+
+# 🔌 12V Regulated Linear Power Supply  
+### مزود طاقة خطي منظّم 12 فولت
+
+![Simulator](https://img.shields.io/badge/Simulator-NI%20Multisim%2013-blue)
+![Output](https://img.shields.io/badge/Output-12V%20DC-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 </div>
- 
+
 ---
- 
-<details>
-<summary>🇬🇧 English</summary>
- 
-A classic linear regulated power supply designed in **NI Multisim 13**, converting **230Vrms / 50Hz** mains AC down to a stable **+12V DC** output using the LM7812CT voltage regulator.
- 
-### Schematic
- 
+
+## 🌐 Language / اللغة
+
+- 🇬🇧 [English](#-english)
+- 🇩🇿 [العربية](#-العربية)
+
+---
+
+# 🇬🇧 English
+
+## Overview
+
+A classic **linear regulated power supply** designed in **NI Multisim 13**, converting  
+**230 Vrms / 50 Hz AC mains** into a stable **+12 V DC output** using the **LM7812CT** voltage regulator.
+
+---
+
+## Circuit Schematic
+
 ![Schematic](assets/schematic.png)
- 
-### How It Works
- 
+
+---
+
+## How It Works
+
 | Stage | Components | Function |
 |---|---|---|
-| Transformer | 5H_SP (10:1) | Steps 230Vrms down to ~23Vrms |
+| Transformer | 5H_SP (10:1) | Steps 230 Vrms down to ~23 Vrms |
 | Rectifier | D1–D4 (1N4007) | Full-wave bridge rectification |
-| Filter | C2 (4700µF), C1 (100nF) | Smooths rectified DC; bulk + HF bypass |
-| Regulator | U1 (LM7812CT) | Regulates to +12V DC |
-| Output filter | C3 (100nF), C4 (10µF) | Stabilises regulator output |
-| Protection | D5 (1N4007) | Reverse-polarity output protection |
- 
-### Step-by-step signal flow
- 
-1. **V1** provides 230Vrms / 50Hz AC — same as a standard wall outlet.
-2. The **10:1 transformer (5H_SP)** reduces this to ~23Vrms (~32.5V peak).
-3. The **bridge rectifier** (D1–D4) converts AC to pulsating DC (~31V after diode drops).
-4. **C2 (4700µF)** smooths the bulk ripple; **C1 (100nF)** bypasses high-frequency noise.
-5. The **LM7812CT** clamps the output to a steady **+12V**.
-6. **C3 (100nF)** and **C4 (10µF)** filter the regulated output for stability.
-7. **D5** blocks reverse current from flowing back into the system.
- 
-### Components
- 
+| Filter | C2 (4700µF), C1 (100nF) | Smooths rectified DC |
+| Regulator | U1 (LM7812CT) | Regulates to +12 V DC |
+| Output filter | C3 (100nF), C4 (10µF) | Stabilizes regulator output |
+| Protection | D5 (1N4007) | Reverse-current protection |
+
+---
+
+## Signal Flow
+
+1. **V1** provides 230 Vrms / 50 Hz AC — equivalent to a household outlet.
+2. The **10:1 transformer** reduces the voltage to ~23 Vrms (~32.5 V peak).
+3. The **bridge rectifier** converts AC to pulsating DC (~31 V after diode drops).
+4. **C2 (4700 µF)** smooths the ripple while **C1 (100 nF)** filters high-frequency noise.
+5. The **LM7812CT** regulates the voltage to **+12 V DC**.
+6. **C3** and **C4** stabilize the output.
+7. **D5** prevents reverse current from flowing back into the regulator.
+
+---
+
+## Components
+
 | Reference | Part | Value / Notes |
 |---|---|---|
-| V1 | AC Source | 230Vrms, 50Hz |
+| V1 | AC Source | 230 Vrms / 50 Hz |
 | 5H_SP | Transformer | 5H primary, 10:1 ratio |
-| D1–D4 | Rectifier diodes | 1N4007 (1A, 1000V) |
-| C2 | Bulk capacitor | 4700µF electrolytic |
-| C1 | Bypass capacitor | 100nF ceramic |
-| U1 | Voltage regulator | LM7812CT (+12V, 1.5A) |
-| C3 | Output bypass | 100nF ceramic |
-| C4 | Output filter | 10µF electrolytic |
+| D1–D4 | Rectifier diodes | 1N4007 |
+| C2 | Bulk capacitor | 4700 µF |
+| C1 | Bypass capacitor | 100 nF |
+| U1 | Voltage regulator | LM7812CT |
+| C3 | Output bypass | 100 nF |
+| C4 | Output filter | 10 µF |
 | D5 | Protection diode | 1N4007 |
- 
-### Electrical Specifications
- 
+
+---
+
+## Electrical Specifications
+
 | Parameter | Value |
 |---|---|
-| Input voltage | 230Vrms / 50Hz |
-| Output voltage | +12V DC (regulated) |
-| Max output current | 1.5A (LM7812CT limit) |
-| Max output power | ~18W |
-| Dropout voltage | ~2V (LM7812CT) |
- 
-### Simulation
- 
-This circuit was designed in **NI Multisim 13**.
- 
+| Input voltage | 230 Vrms / 50 Hz |
+| Output voltage | +12 V DC |
+| Max output current | 1.5 A |
+| Max output power | ~18 W |
+| Dropout voltage | ~2 V |
+
+---
+
+## Simulation
+
+This circuit was designed and simulated in **NI Multisim 13**.
+
 <a href="assets/powersupply.ms13" download>
-  <img src="https://img.shields.io/badge/⬇️%20Download-powersupply.ms13-blue?style=for-the-badge" alt="Download Multisim Project"/>
+<img src="https://img.shields.io/badge/⬇️%20Download%20Multisim%20Project-blue?style=for-the-badge">
 </a>
- 
-### Video Walkthrough
- 
-"will be a video here"
- 
-#### Screenshots
- 
-| Interactive Simulation Settings | Analysis Options | Custom SPICE Options |
+
+---
+
+## Video Walkthrough
+
+https://github.com/user-attachments/assets/fe318b0b-636f-46ce-af26-970246c491c9
+
+---
+
+## Screenshots
+
+| Interactive Simulation | Analysis Options | SPICE Settings |
 |---|---|---|
 | ![](assets/sim-settings-1.png) | ![](assets/sim-settings-2.png) | ![](assets/sim-settings-3.png) |
- 
-#### Running the simulation
- 
-1. Open `powersupply.ms13` in Multisim 13 or later.
-2. Press **F5** (or go to **Simulate → Run**) to start interactive simulation.
-3. Place a **Multimeter** or **Oscilloscope** (from Instruments menu) between `out+` and `out−` to measure the output voltage.
- 
-#### Simulation settings (already configured in the file)
- 
-| Setting | Value |
-|---|---|
-| SPICE options | Use custom settings |
-| Max simulation speed | Limited to real time |
-| Grapher data | Discard data to save memory |
-| Max number of points | 128,000 |
-| ABSTOL | 1e-9 A |
-| VNTOL | 0.0001 V |
-| RELTOL | 0.01 |
-| RSHUNT | 1e+12 Ω |
-| Convergence assistance (CONVLIMIT) | Enabled |
- 
-</details>
- 
+
 ---
- 
-<details>
-<summary>🇩🇿 العربية</summary>
- 
+
+## Running the Simulation
+
+1. Open `powersupply.ms13` in **NI Multisim 13**.
+2. Press **F5** or go to **Simulate → Run**.
+3. Connect a **Multimeter** or **Oscilloscope** between `out+` and `out−`.
+
+---
+
+# 🇩🇿 العربية
+
 <div dir="rtl">
- 
-مزود طاقة خطي منظّم مصمَّم ببرنامج **NI Multisim 13**، يحوّل تيار متردد بجهد **230 فولت جذر متوسط مربع / 50 هرتز** إلى تيار مستمر مستقر بجهد **12 فولت** باستخدام منظّم الجهد LM7812CT.
- 
-### المخطط الكهربائي
- 
+
+## نظرة عامة
+
+مزود طاقة خطي منظّم صُمم باستخدام **NI Multisim 13** لتحويل  
+تيار متردد بجهد **230 فولت / 50 هرتز** إلى تيار مستمر ثابت بجهد **12 فولت**  
+باستخدام منظم الجهد **LM7812CT**.
+
+---
+
+## المخطط الكهربائي
+
 ![المخطط الكهربائي](assets/schematic.png)
- 
-### طريقة عمل الدائرة
- 
-| المرحلة | المكوّنات | الوظيفة |
+
+---
+
+## طريقة عمل الدائرة
+
+| المرحلة | المكونات | الوظيفة |
 |---|---|---|
-| المحوّل | 5H_SP (10:1) | يخفّض الجهد من 230 فولت إلى 23 فولت |
-| الموجّه | D1–D4 (1N4007) | تحويل التيار المتردد إلى تيار مستمر |
-| المرشّح | C2 (4700µF)، C1 (100nF) | تنعيم التيار المستمر وتصفية الترددات العالية |
-| المنظّم | U1 (LM7812CT) | تثبيت الجهد عند 12 فولت |
-| مرشّح الخرج | C3 (100nF)، C4 (10µF) | تعزيز استقرار جهد الخرج |
-| الحماية | D5 (1N4007) | الحماية من عكس القطبية |
- 
-### شرح تدفق الإشارة خطوة بخطوة
- 
-1. **المصدر V1** يوفّر تيارًا متردًا بجهد 230 فولت وتردد 50 هرتز — مماثل لمأخذ الكهرباء المنزلي.
-2. **المحوّل (5H_SP)** بنسبة 10:1 يخفّض الجهد إلى نحو 23 فولت جذر متوسط مربع (ذروة ~32.5 فولت).
-3. **الموجّه الجسري** (D1–D4) يحوّل التيار المتردد إلى تيار مستمر نابض (نحو 31 فولت بعد انخفاض الصمامات).
-4. **C2 (4700µF)** يخفّض التموّج الرئيسي؛ **C1 (100nF)** يصفّي الترددات العالية.
-5. **LM7812CT** يثبّت جهد الخرج عند **12 فولت** بصورة مستقرة.
-6. **C3 (100nF)** و**C4 (10µF)** يعزّزان استقرار الجهد بعد المنظّم.
-7. **D5** تمنع عودة التيار إلى الدائرة.
- 
-### قائمة المكوّنات
- 
-| المرجع | القطعة | القيمة / ملاحظات |
+| المحول | 5H_SP (10:1) | خفض الجهد من 230 فولت إلى حوالي 23 فولت |
+| المقوم | D1–D4 (1N4007) | تحويل التيار المتردد إلى تيار مستمر |
+| المرشح | C2 ، C1 | تنعيم الجهد وإزالة الضوضاء |
+| المنظم | LM7812CT | تثبيت الجهد عند 12 فولت |
+| مرشح الخرج | C3 ، C4 | تحسين استقرار الجهد |
+| الحماية | D5 | منع رجوع التيار |
+
+---
+
+## تدفق الإشارة
+
+1. المصدر **V1** يوفر تيارًا مترددًا بجهد **230 فولت / 50 هرتز**.
+2. **المحول بنسبة 10:1** يخفض الجهد إلى حوالي **23 فولت**.
+3. **المقوم الجسري** يحول التيار المتردد إلى تيار مستمر نابض.
+4. المكثف **C2** يقلل التموج بينما **C1** يزيل الضوضاء عالية التردد.
+5. المنظم **LM7812CT** يثبت الجهد عند **12 فولت**.
+6. المكثفان **C3 و C4** يحسنان استقرار الخرج.
+7. الصمام **D5** يمنع رجوع التيار إلى الدائرة.
+
+---
+
+## المكونات
+
+| المرجع | القطعة | القيمة |
 |---|---|---|
-| V1 | مصدر تيار متردد | 230 فولت جذر متوسط مربع، 50 هرتز |
-| 5H_SP | محوّل كهربائي | حثّ ابتدائي 5 هنري، نسبة 10:1 |
-| D1–D4 | صمامات تقويم | 1N4007 (1 أمبير، 1000 فولت) |
-| C2 | مكثّف رئيسي | 4700 ميكروفاراد كهروليتي |
-| C1 | مكثّف تجاوز | 100 نانوفاراد سيراميك |
-| U1 | منظّم جهد | LM7812CT (12 فولت، 1.5 أمبير) |
-| C3 | مرشّح خرج | 100 نانوفاراد سيراميك |
-| C4 | مرشّح خرج | 10 ميكروفاراد كهروليتي |
+| V1 | مصدر AC | 230 فولت / 50 هرتز |
+| 5H_SP | محول | نسبة 10:1 |
+| D1–D4 | صمامات تقويم | 1N4007 |
+| C2 | مكثف رئيسي | 4700µF |
+| C1 | مكثف تجاوز | 100nF |
+| U1 | منظم جهد | LM7812CT |
+| C3 | مكثف خرج | 100nF |
+| C4 | مكثف خرج | 10µF |
 | D5 | صمام حماية | 1N4007 |
- 
-### المواصفات الكهربائية
- 
+
+---
+
+## المواصفات الكهربائية
+
 | المعامل | القيمة |
 |---|---|
-| جهد الدخل | 230 فولت جذر متوسط مربع / 50 هرتز |
-| جهد الخرج | 12 فولت تيار مستمر منظّم |
+| جهد الدخل | 230 فولت |
+| جهد الخرج | 12 فولت DC |
 | أقصى تيار خرج | 1.5 أمبير |
-| أقصى قدرة خرج | ~18 واط |
+| أقصى قدرة | ~18 واط |
 | جهد السقوط | ~2 فولت |
- 
-### المحاكاة
- 
-صُمِّمت هذه الدائرة ببرنامج **NI Multisim 13**.
- 
-<a href="assets/powersupply.ms13" download>
-  <img src="https://img.shields.io/badge/⬇️%20تحميل_ملف_المشروع-powersupply.ms13-green?style=for-the-badge" alt="تحميل"/>
-</a>
- 
-### شرح فيديو
 
+---
+
+## المحاكاة
+
+تم تصميم ومحاكاة هذه الدائرة باستخدام **NI Multisim 13**.
+
+<a href="assets/powersupply.ms13" download>
+<img src="https://img.shields.io/badge/⬇️%20تحميل%20ملف%20المشروع-green?style=for-the-badge">
+</a>
+
+---
+
+## فيديو الشرح
 
 https://github.com/user-attachments/assets/68a5b7d8-426b-4bd2-81d5-98c172c6e117
 
-
- 
-#### لقطات الشاشة
- 
-| إعدادات المحاكاة التفاعلية | خيارات التحليل | إعدادات SPICE المخصصة |
-|---|---|---|
-| ![](assets/sim-settings-1.png) | ![](assets/sim-settings-2.png) | ![](assets/sim-settings-3.png) |
- 
-#### كيفية تشغيل المحاكاة
- 
-1. افتح `powersupply.ms13` في Multisim 13 أو إصدار أحدث.
-2. اضغط **F5** أو انتقل إلى **Simulate → Run**.
-3. ضع **مقياس الجهد** أو **الأوسيلوسكوب** بين `out+` و`out−` لقياس جهد الخرج.
- 
-#### إعدادات المحاكاة (مضبوطة مسبقًا في الملف)
- 
-| الإعداد | القيمة |
-|---|---|
-| خيارات SPICE | إعدادات مخصصة |
-| سرعة المحاكاة القصوى | محدودة بالزمن الحقيقي |
-| بيانات الرسم البياني | حذف البيانات لتوفير الذاكرة |
-| الحد الأقصى لعدد النقاط | 128,000 |
-| ABSTOL | 1e-9 أمبير |
-| VNTOL | 0.0001 فولت |
-| RELTOL | 0.01 |
-| RSHUNT | 1e+12 أوم |
-| مساعدة التقارب (CONVLIMIT) | مفعّلة |
- 
 </div>
-</details>
- 
+
 ---
- 
+
+## ⚠️ Safety Notice
+
+This project involves **230V mains electricity**.  
+Improper handling can cause **serious injury or death**.
+
+Only build this circuit if you are familiar with proper electrical safety practices.
+
+---
+
 ## License
- 
-This project is released under the [MIT License](LICENSE).
+
+This project is released under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.
