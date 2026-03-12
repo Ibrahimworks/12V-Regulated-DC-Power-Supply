@@ -97,7 +97,7 @@ This circuit was designed and simulated in **NI Multisim 13**.
 ---
 
 ## Video Walkthrough
-![Video Language](https://img.shields.io/badge/Language-English-blue)
+![Language](https://img.shields.io/badge/Language-English-blue)
 > ⚠️ **Note:** The **Arabic video walkthrough** contains more detailed explanations.  
 > ⚠️ **ملاحظة:** فيديو الشرح **باللغة العربية** يحتوي على شرح أكثر تفصيلاً.
 
@@ -212,7 +212,8 @@ Only build this circuit if you are familiar with proper electrical safety practi
 ---
 
 ## فيديو الشرح
-![لغة الفيديو](https://img.shields.io/badge/اللغة-العربية-green)
+![لغة](https://img.shields.io/badge/اللغة-العربية-green)
+
 https://github.com/user-attachments/assets/68a5b7d8-426b-4bd2-81d5-98c172c6e117
 
 </div>
