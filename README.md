@@ -14,7 +14,7 @@ A classic linear regulated power supply designed in LTspice, converting **230Vrm
 
 | Stage | Components | Function |
 |---|---|---|
-| Transformer | 5H_SP (10:1) | Steps 230Vrms down to ~23Vrms with value of 5 Henry |
+| Transformer | 5H_SP (10:1) | Steps 230Vrms down to ~23Vrms |
 | Rectifier | D1–D4 (1N4007) | Full-wave bridge rectification |
 | Filter | C2 (4700µF), C1 (100nF) | Smooths rectified DC; bulk + HF bypass |
 | Regulator | U1 (LM7812CT) | Regulates to +12V DC |
@@ -38,7 +38,7 @@ A classic linear regulated power supply designed in LTspice, converting **230Vrm
 | Reference | Part | Value / Notes |
 |---|---|---|
 | V1 | AC Source | 230Vrms, 50Hz |
-| L1 | Transformer | 5H_SP, 10:1 ratio |
+| 5H_SP | Transformer | 5Henry, 10:1 ratio |
 | D1–D4 | Rectifier diodes | 1N4007 (1A, 1000V) |
 | C2 | Bulk capacitor | 4700µF electrolytic |
 | C1 | Bypass capacitor | 100nF ceramic |
