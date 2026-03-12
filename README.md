@@ -66,7 +66,11 @@ This circuit was designed in **NI Multisim 13**.
 
 ### Video Walkthrough
 
-https://github.com/user-attachments/assets/demo_en.mp4
+<video src="https://github.com/user-attachments/assets/demo_en.mp4" controls width="100%">
+
+> 📅 Video will be uploaded soon.
+
+</video>
 
 <a href="powersupply.ms13" download>
   <img src="https://img.shields.io/badge/⬇️%20Download-powersupply.ms13-blue?style=for-the-badge" alt="Download Multisim Project"/>
@@ -102,7 +106,7 @@ https://github.com/user-attachments/assets/demo_en.mp4
 
 ---
 
-<details>
+<details><details>
 <summary>🇩🇿 العربية</summary>
 
 <div dir="rtl">
@@ -164,7 +168,11 @@ https://github.com/user-attachments/assets/demo_en.mp4
 
 ### شرح فيديو
 
-https://github.com/user-attachments/assets/demo_ar.mp4
+<video src="https://github.com/user-attachments/assets/demo_ar.mp4" controls width="100%">
+
+> 📅 الفيديو سيتم رفعه قريبًا
+
+</video>
 
 <a href="powersupply.ms13" download>
   <img src="https://img.shields.io/badge/⬇️%20تحميل_ملف_المشروع-powersupply.ms13-green?style=for-the-badge" alt="تحميل"/>
@@ -198,6 +206,8 @@ https://github.com/user-attachments/assets/demo_ar.mp4
 
 </div>
 </details>
+
+---
 
 
 ---
