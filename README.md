@@ -102,7 +102,7 @@ https://github.com/user-attachments/assets/demo_en.mp4
 
 ---
 
-<details><details>
+<details>
 <summary>🇩🇿 العربية</summary>
 
 <div dir="rtl">
@@ -198,8 +198,6 @@ https://github.com/user-attachments/assets/demo_ar.mp4
 
 </div>
 </details>
-
----
 
 
 ---
