@@ -97,6 +97,8 @@ This circuit was designed and simulated in **NI Multisim 13**.
 ---
 
 ## Video Walkthrough
+> ⚠️ **Note:** The **Arabic video walkthrough** contains more detailed explanations.  
+> ⚠️ **ملاحظة:** فيديو الشرح **باللغة العربية** يحتوي على شرح أكثر تفصيلاً.
 
 https://github.com/user-attachments/assets/fe318b0b-636f-46ce-af26-970246c491c9
 
