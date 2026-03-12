@@ -216,7 +216,6 @@ Only build this circuit if you are familiar with proper electrical safety practi
 
 https://github.com/user-attachments/assets/68a5b7d8-426b-4bd2-81d5-98c172c6e117
 
-</div>
 
 ---
 
@@ -225,6 +224,9 @@ https://github.com/user-attachments/assets/68a5b7d8-426b-4bd2-81d5-98c172c6e117
 | إعدادات المحاكاة التفاعلية | خيارات التحليل | إعدادات SPICE |
 |---|---|---|
 | ![](assets/sim-settings-1.png) | ![](assets/sim-settings-2.png) | ![](assets/sim-settings-3.png) |
+
+</div>
+
 ---
 
 ## ⚠️ تنبيه هام للسلامة
