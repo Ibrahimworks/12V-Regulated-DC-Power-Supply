@@ -4,7 +4,7 @@
 ### مزود طاقة خطي منظّم 12 فولت
 
 ![Simulator](https://img.shields.io/badge/Simulator-NI%20Multisim%2013-blue)
-![Output](https://img.shields.io/badge/Output-12V%20DC-orange)
+![Output](https://img.shields.io/badge/Input%20230V%20AC%20→%20Output%2012V%20DC-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 </div>
