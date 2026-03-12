@@ -70,9 +70,7 @@ This circuit was designed in **NI Multisim 13**.
 
 ### Video Walkthrough
 
-<!-- REPLACE THE LINE BELOW WITH YOUR GITHUB ASSET URL ONCE UPLOADED -->
-> 📅 **Video will be uploaded soon.**
-<!-- Example: https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -->
+[![Watch the video](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/schematic.png)](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/assets/demo_gb.mp4)
 
 #### Screenshots
 
@@ -170,9 +168,7 @@ This circuit was designed in **NI Multisim 13**.
 
 ### شرح فيديو
 
-<!-- استبدل السطر أدناه برابط GitHub Asset بعد الرفع -->
-> 📅 **الفيديو سيتم رفعه قريبًا**
-<!-- مثال: https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -->
+[![شاهد الفيديو](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/schematic.png)](https://raw.githubusercontent.com/Ibrahimworks/12V-Regulated-DC-Power-Supply/main/assets/demo_ar.mp4)
 
 #### لقطات الشاشة
 
