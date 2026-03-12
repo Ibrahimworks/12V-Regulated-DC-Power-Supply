@@ -6,7 +6,7 @@ A classic linear regulated power supply designed in LTspice, converting **230Vrm
 
 ## Schematic
 
-![Schematic](schematic.png)
+![Schematic](Schematic.png)
 
 ---
 
